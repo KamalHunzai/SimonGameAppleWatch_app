@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2DA284FE1AD0843700D86628 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA284FD1AD0843700D86628 /* main.m */; };
+		2DA285011AD0843700D86628 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA285001AD0843700D86628 /* AppDelegate.m */; };
+		2DA285041AD0843700D86628 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA285031AD0843700D86628 /* ViewController.m */; };
+		2DA285071AD0843700D86628 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DA285051AD0843700D86628 /* Main.storyboard */; };
+		2DA285091AD0843700D86628 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DA285081AD0843700D86628 /* Images.xcassets */; };
+		2DA2850C1AD0843700D86628 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DA2850A1AD0843700D86628 /* LaunchScreen.xib */; };
+		2DA285181AD0843800D86628 /* SimonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA285171AD0843800D86628 /* SimonTests.m */; };
+		2DA2852C1AD0848D00D86628 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA2852B1AD0848D00D86628 /* InterfaceController.m */; };
+		2DA2852F1AD0848D00D86628 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA2852E1AD0848D00D86628 /* NotificationController.m */; };
+		2DA285321AD0848D00D86628 /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA285311AD0848D00D86628 /* GlanceController.m */; };
+		2DA285341AD0848D00D86628 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DA285331AD0848D00D86628 /* Images.xcassets */; };
+		2DA285381AD0848D00D86628 /* Simon WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 2DA285371AD0848D00D86628 /* Simon WatchKit App.app */; };
+		2DA285401AD0848D00D86628 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DA2853E1AD0848D00D86628 /* Interface.storyboard */; };
+		2DA285421AD0848D00D86628 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DA285411AD0848D00D86628 /* Images.xcassets */; };
+		2DA285451AD0848D00D86628 /* Simon WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2DA285251AD0848D00D86628 /* Simon WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2DA2854F1AD086F100D86628 /* SimonWatchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA2854E1AD086F100D86628 /* SimonWatchVC.m */; };
+		2DA285561AD0AE4100D86628 /* SimonGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA285551AD0AE4100D86628 /* SimonGame.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2DA285121AD0843800D86628 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DA284F01AD0843700D86628 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DA284F71AD0843700D86628;
+			remoteInfo = Simon;
+		};
+		2DA285391AD0848D00D86628 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DA284F01AD0843700D86628 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DA285361AD0848D00D86628;
+			remoteInfo = "Simon WatchKit App";
+		};
+		2DA285431AD0848D00D86628 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DA284F01AD0843700D86628 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DA285241AD0848D00D86628;
+			remoteInfo = "Simon WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2DA2854C1AD0848D00D86628 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2DA285451AD0848D00D86628 /* Simon WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2DA284F81AD0843700D86628 /* Simon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DA284FC1AD0843700D86628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DA284FD1AD0843700D86628 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2DA284FF1AD0843700D86628 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2DA285001AD0843700D86628 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2DA285021AD0843700D86628 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2DA285031AD0843700D86628 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2DA285061AD0843700D86628 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2DA285081AD0843700D86628 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2DA2850B1AD0843700D86628 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2DA285111AD0843800D86628 /* SimonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DA285161AD0843800D86628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DA285171AD0843800D86628 /* SimonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimonTests.m; sourceTree = "<group>"; };
+		2DA285251AD0848D00D86628 /* Simon WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Simon WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DA285281AD0848D00D86628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DA285291AD0848D00D86628 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		2DA2852A1AD0848D00D86628 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		2DA2852B1AD0848D00D86628 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		2DA2852D1AD0848D00D86628 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		2DA2852E1AD0848D00D86628 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		2DA285301AD0848D00D86628 /* GlanceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlanceController.h; sourceTree = "<group>"; };
+		2DA285311AD0848D00D86628 /* GlanceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlanceController.m; sourceTree = "<group>"; };
+		2DA285331AD0848D00D86628 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2DA285371AD0848D00D86628 /* Simon WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simon WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DA2853D1AD0848D00D86628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DA2853F1AD0848D00D86628 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		2DA285411AD0848D00D86628 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2DA2854D1AD086F100D86628 /* SimonWatchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimonWatchVC.h; sourceTree = "<group>"; };
+		2DA2854E1AD086F100D86628 /* SimonWatchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimonWatchVC.m; sourceTree = "<group>"; };
+		2DA285541AD0AE4100D86628 /* SimonGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimonGame.h; sourceTree = "<group>"; };
+		2DA285551AD0AE4100D86628 /* SimonGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimonGame.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2DA284F51AD0843700D86628 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DA2850E1AD0843800D86628 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DA285221AD0848D00D86628 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DA284EF1AD0843700D86628 = {
+			isa = PBXGroup;
+			children = (
+				2DA284FA1AD0843700D86628 /* Simon */,
+				2DA285141AD0843800D86628 /* SimonTests */,
+				2DA285261AD0848D00D86628 /* Simon WatchKit Extension */,
+				2DA2853B1AD0848D00D86628 /* Simon WatchKit App */,
+				2DA284F91AD0843700D86628 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2DA284F91AD0843700D86628 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DA284F81AD0843700D86628 /* Simon.app */,
+				2DA285111AD0843800D86628 /* SimonTests.xctest */,
+				2DA285251AD0848D00D86628 /* Simon WatchKit Extension.appex */,
+				2DA285371AD0848D00D86628 /* Simon WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DA284FA1AD0843700D86628 /* Simon */ = {
+			isa = PBXGroup;
+			children = (
+				2DA284FF1AD0843700D86628 /* AppDelegate.h */,
+				2DA285001AD0843700D86628 /* AppDelegate.m */,
+				2DA285021AD0843700D86628 /* ViewController.h */,
+				2DA285031AD0843700D86628 /* ViewController.m */,
+				2DA285051AD0843700D86628 /* Main.storyboard */,
+				2DA285081AD0843700D86628 /* Images.xcassets */,
+				2DA2850A1AD0843700D86628 /* LaunchScreen.xib */,
+				2DA284FB1AD0843700D86628 /* Supporting Files */,
+			);
+			path = Simon;
+			sourceTree = "<group>";
+		};
+		2DA284FB1AD0843700D86628 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2DA284FC1AD0843700D86628 /* Info.plist */,
+				2DA284FD1AD0843700D86628 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2DA285141AD0843800D86628 /* SimonTests */ = {
+			isa = PBXGroup;
+			children = (
+				2DA285171AD0843800D86628 /* SimonTests.m */,
+				2DA285151AD0843800D86628 /* Supporting Files */,
+			);
+			path = SimonTests;
+			sourceTree = "<group>";
+		};
+		2DA285151AD0843800D86628 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2DA285161AD0843800D86628 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2DA285261AD0848D00D86628 /* Simon WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2DA285501AD08F4300D86628 /* ViewControllers */,
+				2DA2852A1AD0848D00D86628 /* InterfaceController.h */,
+				2DA2852B1AD0848D00D86628 /* InterfaceController.m */,
+				2DA2852D1AD0848D00D86628 /* NotificationController.h */,
+				2DA2852E1AD0848D00D86628 /* NotificationController.m */,
+				2DA285301AD0848D00D86628 /* GlanceController.h */,
+				2DA285311AD0848D00D86628 /* GlanceController.m */,
+				2DA285331AD0848D00D86628 /* Images.xcassets */,
+				2DA285271AD0848D00D86628 /* Supporting Files */,
+			);
+			path = "Simon WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		2DA285271AD0848D00D86628 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2DA285281AD0848D00D86628 /* Info.plist */,
+				2DA285291AD0848D00D86628 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2DA2853B1AD0848D00D86628 /* Simon WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				2DA2853E1AD0848D00D86628 /* Interface.storyboard */,
+				2DA285411AD0848D00D86628 /* Images.xcassets */,
+				2DA2853C1AD0848D00D86628 /* Supporting Files */,
+			);
+			path = "Simon WatchKit App";
+			sourceTree = "<group>";
+		};
+		2DA2853C1AD0848D00D86628 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2DA2853D1AD0848D00D86628 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2DA285501AD08F4300D86628 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2DA2854D1AD086F100D86628 /* SimonWatchVC.h */,
+				2DA2854E1AD086F100D86628 /* SimonWatchVC.m */,
+				2DA285541AD0AE4100D86628 /* SimonGame.h */,
+				2DA285551AD0AE4100D86628 /* SimonGame.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2DA284F71AD0843700D86628 /* Simon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DA2851B1AD0843800D86628 /* Build configuration list for PBXNativeTarget "Simon" */;
+			buildPhases = (
+				2DA284F41AD0843700D86628 /* Sources */,
+				2DA284F51AD0843700D86628 /* Frameworks */,
+				2DA284F61AD0843700D86628 /* Resources */,
+				2DA2854C1AD0848D00D86628 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DA285441AD0848D00D86628 /* PBXTargetDependency */,
+			);
+			name = Simon;
+			productName = Simon;
+			productReference = 2DA284F81AD0843700D86628 /* Simon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2DA285101AD0843800D86628 /* SimonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DA2851E1AD0843800D86628 /* Build configuration list for PBXNativeTarget "SimonTests" */;
+			buildPhases = (
+				2DA2850D1AD0843800D86628 /* Sources */,
+				2DA2850E1AD0843800D86628 /* Frameworks */,
+				2DA2850F1AD0843800D86628 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DA285131AD0843800D86628 /* PBXTargetDependency */,
+			);
+			name = SimonTests;
+			productName = SimonTests;
+			productReference = 2DA285111AD0843800D86628 /* SimonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2DA285241AD0848D00D86628 /* Simon WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DA285491AD0848D00D86628 /* Build configuration list for PBXNativeTarget "Simon WatchKit Extension" */;
+			buildPhases = (
+				2DA285211AD0848D00D86628 /* Sources */,
+				2DA285221AD0848D00D86628 /* Frameworks */,
+				2DA285231AD0848D00D86628 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DA2853A1AD0848D00D86628 /* PBXTargetDependency */,
+			);
+			name = "Simon WatchKit Extension";
+			productName = "Simon WatchKit Extension";
+			productReference = 2DA285251AD0848D00D86628 /* Simon WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		2DA285361AD0848D00D86628 /* Simon WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DA285461AD0848D00D86628 /* Build configuration list for PBXNativeTarget "Simon WatchKit App" */;
+			buildPhases = (
+				2DA285351AD0848D00D86628 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Simon WatchKit App";
+			productName = "Simon WatchKit App";
+			productReference = 2DA285371AD0848D00D86628 /* Simon WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2DA284F01AD0843700D86628 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = self;
+				TargetAttributes = {
+					2DA284F71AD0843700D86628 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					2DA285101AD0843800D86628 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 2DA284F71AD0843700D86628;
+					};
+					2DA285241AD0848D00D86628 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					2DA285361AD0848D00D86628 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = 2DA284F31AD0843700D86628 /* Build configuration list for PBXProject "Simon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2DA284EF1AD0843700D86628;
+			productRefGroup = 2DA284F91AD0843700D86628 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2DA284F71AD0843700D86628 /* Simon */,
+				2DA285101AD0843800D86628 /* SimonTests */,
+				2DA285241AD0848D00D86628 /* Simon WatchKit Extension */,
+				2DA285361AD0848D00D86628 /* Simon WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2DA284F61AD0843700D86628 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA285071AD0843700D86628 /* Main.storyboard in Resources */,
+				2DA2850C1AD0843700D86628 /* LaunchScreen.xib in Resources */,
+				2DA285091AD0843700D86628 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DA2850F1AD0843800D86628 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DA285231AD0848D00D86628 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA285341AD0848D00D86628 /* Images.xcassets in Resources */,
+				2DA285381AD0848D00D86628 /* Simon WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DA285351AD0848D00D86628 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA285401AD0848D00D86628 /* Interface.storyboard in Resources */,
+				2DA285421AD0848D00D86628 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2DA284F41AD0843700D86628 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA285041AD0843700D86628 /* ViewController.m in Sources */,
+				2DA285011AD0843700D86628 /* AppDelegate.m in Sources */,
+				2DA284FE1AD0843700D86628 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DA2850D1AD0843800D86628 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA285181AD0843800D86628 /* SimonTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DA285211AD0848D00D86628 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA2852F1AD0848D00D86628 /* NotificationController.m in Sources */,
+				2DA2852C1AD0848D00D86628 /* InterfaceController.m in Sources */,
+				2DA285321AD0848D00D86628 /* GlanceController.m in Sources */,
+				2DA285561AD0AE4100D86628 /* SimonGame.m in Sources */,
+				2DA2854F1AD086F100D86628 /* SimonWatchVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2DA285131AD0843800D86628 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DA284F71AD0843700D86628 /* Simon */;
+			targetProxy = 2DA285121AD0843800D86628 /* PBXContainerItemProxy */;
+		};
+		2DA2853A1AD0848D00D86628 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DA285361AD0848D00D86628 /* Simon WatchKit App */;
+			targetProxy = 2DA285391AD0848D00D86628 /* PBXContainerItemProxy */;
+		};
+		2DA285441AD0848D00D86628 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DA285241AD0848D00D86628 /* Simon WatchKit Extension */;
+			targetProxy = 2DA285431AD0848D00D86628 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2DA285051AD0843700D86628 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DA285061AD0843700D86628 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2DA2850A1AD0843700D86628 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DA2850B1AD0843700D86628 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		2DA2853E1AD0848D00D86628 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DA2853F1AD0848D00D86628 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2DA285191AD0843800D86628 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2DA2851A1AD0843800D86628 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2DA2851C1AD0843800D86628 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Simon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2DA2851D1AD0843800D86628 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Simon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2DA2851F1AD0843800D86628 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SimonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Simon.app/Simon";
+			};
+			name = Debug;
+		};
+		2DA285201AD0843800D86628 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SimonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Simon.app/Simon";
+			};
+			name = Release;
+		};
+		2DA285471AD0848D00D86628 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = Simon_WatchKit_Extension;
+				INFOPLIST_FILE = "Simon WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		2DA285481AD0848D00D86628 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = Simon_WatchKit_Extension;
+				INFOPLIST_FILE = "Simon WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		2DA2854A1AD0848D00D86628 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Simon WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2DA2854B1AD0848D00D86628 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Simon WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2DA284F31AD0843700D86628 /* Build configuration list for PBXProject "Simon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DA285191AD0843800D86628 /* Debug */,
+				2DA2851A1AD0843800D86628 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DA2851B1AD0843800D86628 /* Build configuration list for PBXNativeTarget "Simon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DA2851C1AD0843800D86628 /* Debug */,
+				2DA2851D1AD0843800D86628 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2DA2851E1AD0843800D86628 /* Build configuration list for PBXNativeTarget "SimonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DA2851F1AD0843800D86628 /* Debug */,
+				2DA285201AD0843800D86628 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2DA285461AD0848D00D86628 /* Build configuration list for PBXNativeTarget "Simon WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DA285471AD0848D00D86628 /* Debug */,
+				2DA285481AD0848D00D86628 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2DA285491AD0848D00D86628 /* Build configuration list for PBXNativeTarget "Simon WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DA2854A1AD0848D00D86628 /* Debug */,
+				2DA2854B1AD0848D00D86628 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2DA284F01AD0843700D86628 /* Project object */;
+}

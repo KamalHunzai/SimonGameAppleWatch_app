@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6751" systemVersion="13E28" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Simon WatchVC-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="SimonWatchVC">
+                    <items>
+                        <button width="1" alignment="left" title="Start Game" id="ND0-ED-3va">
+                            <connections>
+                                <action selector="startGamePressed" destination="AgC-eL-Hgc" id="vPx-eO-8eJ"/>
+                            </connections>
+                        </button>
+                        <label width="1" height="37" alignment="left" text="Game Over" textAlignment="center" id="jZm-EW-3YH"/>
+                        <label width="1" height="37" alignment="left" text="Score.999" textAlignment="center" id="5TW-th-Y5R"/>
+                    </items>
+                    <connections>
+                        <outlet property="gameOverLabel" destination="jZm-EW-3YH" id="H4R-g0-wqT"/>
+                        <outlet property="scoreLabel" destination="5TW-th-Y5R" id="bHh-UJ-QqS"/>
+                        <outlet property="startGameButton" destination="ND0-ED-3va" id="LI9-fh-Z7z"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="235" y="347"/>
+        </scene>
+        <!--SimonGame-->
+        <scene sceneID="mJq-OH-qvj">
+            <objects>
+                <controller identifier="SimonGame" id="usb-gP-xdb" customClass="SimonGame">
+                    <items>
+                        <group width="1" height="55" alignment="left" id="Igc-xO-k1f">
+                            <items>
+                                <button width="0.5" height="58" alignment="left" id="0RX-tz-uEi">
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="upperLeftPressed" destination="usb-gP-xdb" id="fx6-Sb-eIH"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="58" alignment="left" id="cKc-hZ-3FP">
+                                    <color key="backgroundColor" red="1" green="0.17873740343905298" blue="0.0062462636595904675" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="upperRightPressed" destination="usb-gP-xdb" id="FiO-Mq-wtm"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="55" alignment="left" id="5Y6-KU-bK0">
+                            <items>
+                                <button width="0.5" height="55" alignment="left" id="l7A-A7-2Ln">
+                                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="lowerLeftPressed" destination="usb-gP-xdb" id="hj3-WC-Y2Y"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="56" alignment="left" id="YIg-rg-vUX">
+                                    <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="lowerRightPressed" destination="usb-gP-xdb" id="qWI-GD-63C"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <label width="1" height="25" alignment="left" text="Starting Game" textAlignment="center" id="dRw-dx-tGn"/>
+                    </items>
+                    <connections>
+                        <outlet property="lowerLeftButton" destination="l7A-A7-2Ln" id="2Yl-57-sd3"/>
+                        <outlet property="lowerRightButton" destination="YIg-rg-vUX" id="4VF-7r-gWG"/>
+                        <outlet property="notificationLabel" destination="dRw-dx-tGn" id="5sg-BI-kuY"/>
+                        <outlet property="upperLeftButton" destination="0RX-tz-uEi" id="3I2-0e-si0"/>
+                        <outlet property="upperRightButton" destination="cKc-hZ-3FP" id="5Dk-71-Gt3"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="464" y="355"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="BOz-TT-tkC">
+            <objects>
+                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController">
+                    <items>
+                        <group alignment="left" id="t8f-Gd-c4y"/>
+                        <group alignment="left" id="uCw-4Q-Ouw"/>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="235" y="672"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="XkS-y5-khE"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="XkS-y5-khE" id="49B-RR-99y"/>
+                        <segue destination="gdX-wl-uQE" kind="relationship" relationship="dynamicNotificationInterface" id="fKh-qV-3T2"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="235" y="1001"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="KIl-fV-djm">
+            <objects>
+                <controller id="gdX-wl-uQE" customClass="NotificationController"/>
+            </objects>
+            <point key="canvasLocation" x="553" y="1001"/>
+        </scene>
+    </scenes>
+</document>
