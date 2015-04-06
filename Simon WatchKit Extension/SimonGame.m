@@ -17,7 +17,8 @@
 @property (weak, nonatomic) IBOutlet WKInterfaceButton *lowerRightButton;
 @property (weak, nonatomic) IBOutlet WKInterfaceLabel *notificationLabel;
 @property (strong,nonatomic)NSArray *currentGameSequence;
-
+@property (assign,nonatomic)NSUInteger currentPlayerTurn;
+@property (assign,nonatomic)BOOL isBlockButtons;
 @end
 
 
@@ -46,6 +47,17 @@
     }
     return flashColors;
 }
+
+-(void)flashQuadrantWithIndex:(NSInteger)quadrantIndex {
+    UIColor *startingColor = [[self quadrantColors] objectAtIndex:quadrantIndex];
+    UIColor *flashColor = [[self quadrantFlashColors] objectAtIndex:quadrantIndex];
+    WKInterfaceButton *buttonToFlash = [[self gameButtons]objectAtIndex:quadrantIndex];
+    [buttonToFlash setBackgroundColor:flashColor];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [buttonToFlash setBackgroundColor:startingColor];
+    });
+}
+
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
     
@@ -54,11 +66,17 @@
 
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
-    self.currentGameSequence = [self generateNewGameSequence];
-    
     [super willActivate];
+    self.currentGameSequence = [self generateNewGameSequence];
+    [self flashQuadrantWithIndex:1];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self flashQuadrantWithIndex:3];
+    });
 }
-
+-(void)startGame{
+    self.currentPlayerTurn = 0;
+    
+}
 - (void)didDeactivate {
     // This method is called when watch view controller is no longer visible
     [super didDeactivate];
