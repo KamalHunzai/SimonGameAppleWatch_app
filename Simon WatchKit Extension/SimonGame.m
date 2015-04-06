@@ -2,7 +2,7 @@
 //  SimonGame.m
 //  Simon
 //
-//  Created by PanaCloud on 4/5/15.
+//  Created by Kamal Hunzai on 4/5/15.
 //  Copyright (c) 2015 self. All rights reserved.
 //
 
@@ -31,6 +31,20 @@
     }
     NSLog(@"New Game Sequence: %@",newSequence);
     return newSequence;
+}
+-(NSArray*) gameButtons{
+    return @[self.upperLeftButton,self.upperRightButton,self.lowerLeftButton,self.lowerRightButton];
+}
+-(NSArray*)quadrantColors{
+    return @[[UIColor redColor],[UIColor blueColor],[UIColor yellowColor],[UIColor greenColor]];
+}
+-(NSArray*)quadrantFlashColors{
+    NSMutableArray *flashColors = [NSMutableArray new];
+    for (NSInteger ii=0; ii < [[self quadrantColors]count]; ii++) {
+        UIColor *flashColor = [[self quadrantColors][ii]colorWithAlphaComponent:1];
+        [flashColors addObject:flashColor];
+    }
+    return flashColors;
 }
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];

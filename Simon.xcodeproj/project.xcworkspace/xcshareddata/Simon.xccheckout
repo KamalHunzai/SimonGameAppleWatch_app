@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C2F9EC2E-6366-42DF-9D4D-4FBA8086DD7A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Simon</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>AA4977801CCF92BDB12A0BEAF8BE8B9D4BF838DE</key>
+		<string>https://github.com/KamalHunzai/SimonGameAppleWatch.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Simon.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>AA4977801CCF92BDB12A0BEAF8BE8B9D4BF838DE</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/KamalHunzai/SimonGameAppleWatch.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>AA4977801CCF92BDB12A0BEAF8BE8B9D4BF838DE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>AA4977801CCF92BDB12A0BEAF8BE8B9D4BF838DE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SimonGameAppleWatch</string>
+		</dict>
+	</array>
+</dict>
+</plist>
