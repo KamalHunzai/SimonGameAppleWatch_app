@@ -18,7 +18,7 @@
 @property (weak, nonatomic) IBOutlet WKInterfaceLabel *notificationLabel;
 @property (strong,nonatomic)NSArray *currentGameSequence;
 @property (assign,nonatomic)NSUInteger currentPlayerTurn;
-@property (assign,nonatomic)BOOL isBlockButtons;
+@property (assign,nonatomic)BOOL isBlockingButtons;
 @end
 
 
@@ -67,15 +67,33 @@
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
     [super willActivate];
-    self.currentGameSequence = [self generateNewGameSequence];
-    [self flashQuadrantWithIndex:1];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self flashQuadrantWithIndex:3];
+    [self startGame];
+}
+-(void)playSeriseFromIndex:(NSInteger)index toIndex:(NSInteger)finishIndex{
+    if(index == finishIndex){
+    // Start next player turn
+        return;
+    }
+  
+    NSNumber* currentQuadrant = [self.currentGameSequence objectAtIndex:index];
+    [self flashQuadrantWithIndex:[currentQuadrant unsignedIntegerValue] ];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self playSeriseFromIndex:1 toIndex:finishIndex];
     });
+}
+-(void)playSeriseForTurn:(NSUInteger)turnIndex{
+    [self playSeriseFromIndex:0 toIndex:turnIndex];
 }
 -(void)startGame{
     self.currentPlayerTurn = 0;
-    
+    self.isBlockingButtons = YES;
+    [self.notificationLabel setText:@"Ready"];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.notificationLabel setText:@"Set"];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self.notificationLabel setText:@"Go"];
+        });
+    });
 }
 - (void)didDeactivate {
     // This method is called when watch view controller is no longer visible
